@@ -1,0 +1,47 @@
+Subscription Releted Migration Query
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CREATE TABLE `subscription_plan` ( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT , `name` VARCHAR(100) NOT NULL , `description` TEXT NOT NULL , `tagline` VARCHAR(50) NOT NULL , `duration` INT(10) NOT NULL , `no_of_product` INT(10) NOT NULL , `custom_plan` ENUM('Yes', 'No') NOT NULL DEFAULT 'No' , `is_free` ENUM('Yes', 'No') NOT NULL DEFAULT 'No' , `price` DECIMAL(8,2) NOT NULL , `currency` VARCHAR(5) NOT NULL , `status` ENUM('Active','Inactive') NOT NULL DEFAULT 'Active' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `subscription_plan_translations` ( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT , `subscription_plan_id` INT(10) UNSIGNED NOT NULL , `name` VARCHAR(100) NOT NULL , `description` TEXT NOT NULL , `tagline` INT(50) NOT NULL , `locale` VARCHAR(5) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `subscription_plan_translations` ADD FOREIGN KEY (`subscription_plan_id`) REFERENCES `subscription_plan`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+CREATE TABLE `user_subscription_plan` ( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT , `user_id` INT(10) UNSIGNED NOT NULL, `name` VARCHAR(100) NOT NULL , `description` TEXT NOT NULL , `tagline` VARCHAR(50) NOT NULL , `duration` INT(10) NOT NULL , `no_of_product` INT(10) NOT NULL , `plan_type` ENUM('Custom', 'Free','Paid') NOT NULL DEFAULT 'Custom' , `price` DECIMAL(8,2) NOT NULL , `currency` VARCHAR(5) NOT NULL , `status` ENUM('Active','Inactive') NOT NULL DEFAULT 'Active' , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `user_subscription_plan` ADD `subscription_plan_id` INT(10) NOT NULL AFTER `user_id`;
+
+
+ALTER TABLE `user_subscription_plan` ADD `created_at` TIMESTAMP NOT NULL AFTER `status`, ADD `updated_at` TIMESTAMP NOT NULL AFTER `created_at`;
+
+
+ALTER TABLE `user_subscription_plan` ADD FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+CREATE TABLE `user_subscription_renewal` ( `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT , `user_plan_id` INT(10) UNSIGNED NOT NULL , `transaction_id` VARCHAR(250) NULL , `subscription_id` VARCHAR(250) NULL , `name` VARCHAR(100) NULL , `description` TEXT NULL , `tagline` VARCHAR(50) NULL , `duration` INT(10) NOT NULL , `no_of_product` INT(10) NOT NULL , `enum` ENUM('Custom','Free','Paid') NOT NULL DEFAULT 'Custom' , `price` DECIMAL(8,2) NOT NULL , `currency` VARCHAR(5) NULL , `payment_status` ENUM('Pending','Success','Failed') NOT NULL DEFAULT 'Pending' , `created_at` TIMESTAMP NOT NULL , `updated_at` TIMESTAMP NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `user_subscription_plan` ADD `auto_renewal` ENUM('On','Off') NOT NULL DEFAULT 'On' AFTER `currency`;
+
+ALTER TABLE `user_subscription_plan` ADD `customer_id` VARCHAR(250) NOT NULL AFTER `currency`;
+
+ALTER TABLE `user_subscription_plan` CHANGE `customer_id` `customer_id` VARCHAR(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL;
+
+ALTER TABLE `user_subscription_renewal` ADD `plan_type` ENUM('Custom','Free','Paid') NOT NULL DEFAULT 'Custom' AFTER `tagline`;
+
+ALTER TABLE `user_subscription_renewal` ADD `payment_type` ENUM('stripe','paypal') NULL AFTER `currency`;
+
+INSERT INTO `business_settings` (`id`, `type`, `value`, `lang`, `created_at`, `updated_at`) VALUES (NULL, 'paypal_product_id', NULL, NULL, current_timestamp(), current_timestamp());
+
+
+ALTER TABLE `user_subscription_renewal` ADD `flow_type` VARCHAR(10) NULL AFTER `payment_status`;
+ALTER TABLE `user_subscription_plan` ADD `flow_type` VARCHAR(10) NULL AFTER `status`;
+
+ALTER TABLE `user_subscription_renewal` ADD `cancelled` INT(10) NOT NULL AFTER `flow_type`;
+
+ALTER TABLE `user_subscription_renewal` ADD `user_id` INT(10) UNSIGNED NOT NULL AFTER `id`;
+
+ALTER TABLE `user_subscription_plan` ADD `alert_subscription` INT(10) NOT NULL AFTER `flow_type`;
+
+ALTER TABLE `general_settings` ADD `max_owe_amount` VARCHAR(255) NULL DEFAULT NULL AFTER `google_plus`;

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-View">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="View" clip-path="url(#clip-View)">
+    <g id="Icon_ionic-ios-eye" data-name="Icon ionic-ios-eye" transform="translate(-1.252 2.125)">
+      <path id="Path_8803" data-name="Path 8803" d="M26.226,7.875C17.612,7.875,10.82,13.3,2.7,22.156a1.694,1.694,0,0,0-.011,2.282C9.641,32.12,15.77,38.73,26.226,38.73c10.328,0,18.074-8.324,23.581-14.356a1.681,1.681,0,0,0,.054-2.218C44.246,15.353,36.479,7.875,26.226,7.875ZM26.7,32.934a9.642,9.642,0,1,1,9.182-9.181A9.646,9.646,0,0,1,26.7,32.934Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_8804" data-name="Path 8804" d="M20.356,15.321a5.034,5.034,0,0,1,.332-1.811c-.107,0-.214-.011-.332-.011a6.856,6.856,0,1,0,6.857,6.857c0-.139-.011-.279-.011-.418a4.751,4.751,0,0,1-1.95.418A4.974,4.974,0,0,1,20.356,15.321Z" transform="translate(5.891 2.946)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

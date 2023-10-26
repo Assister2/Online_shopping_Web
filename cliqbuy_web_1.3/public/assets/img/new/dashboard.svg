@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Dashboard">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Dashboard" clip-path="url(#clip-Dashboard)">
+    <g id="dashboard_customize-white-18dp" transform="translate(-3.07 -3.07)">
+      <g id="Group_2648" data-name="Group 2648" transform="translate(4.07 4.07)">
+        <g id="Group_2647" data-name="Group 2647">
+          <path id="Path_4872" data-name="Path 4872" d="M2,23.333H23.333V2H2Zm5.333-16H18V18H7.333Z" transform="translate(-2 -2)" fill="#fff"/>
+          <path id="Path_4873" data-name="Path 4873" d="M8.667,2V23.333H30V2Zm16,16H14V7.333H24.667Z" transform="translate(18 -2)" fill="#fff"/>
+          <path id="Path_4874" data-name="Path 4874" d="M2,30H23.333V8.667H2ZM7.333,14H18V24.667H7.333Z" transform="translate(-2 18)" fill="#fff"/>
+          <path id="Path_4875" data-name="Path 4875" d="M22,8.667H16.667v8h-8V22h8v8H22V22h8V16.667H22Z" transform="translate(18 18)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

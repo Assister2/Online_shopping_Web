@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "amazon";
+  src:url("../fonts/amazon.eot");
+  src:url("../fonts/amazon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/amazon.woff") format("woff"),
+    url("../fonts/amazon.ttf") format("truetype"),
+    url("../fonts/amazon.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "amazon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-tr"]:before,
+[class*=" icon-tr"]:before {
+  font-family: "amazon" !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tr-cart:before {
+  content: "\61";
+}
+.icon-tr-close:before {
+  content: "\62";
+}
+.icon-tr-heart:before {
+  content: "\63";
+}
+.icon-tr-rotate:before {
+  content: "\64";
+}
+
+/*your custom css goes here*/
+
+/* Custom Styles*/
+:root {
+
+    --light-yellow:#FFD814;
+    --light-orange:#FFA41C;
+    --light-purple:#006F82;
+}
+.btn-col-yellow{
+    background-color: var(--light-yellow);
+    border-color: var(--light-yellow);
+    color: #232F3E;
+    font-weight: 600 !important; 
+}
+.btn-col-orange{
+    background-color: var(--light-orange);
+    border-color: var(--light-orange);
+    color: #232F3E;
+    font-weight: 600 !important; 
+}
+.text-col-indigo{
+    color: var(--light-purple) !important;   
+}
+.badge-light-purple{
+    background-color: var(--light-purple) !important;  
+   
+}
+.badge-new-width{
+    width: 40px !important;
+    height:20px !important;
+}
+.badge-new-width1{
+    width: 50px !important;
+    height:25px !important;
+}
+.header-bg-style{
+    background-color: #232F3E !important;
+    color: white !important;
+}
+.sold-amount-style{
+    background-color: #232F3E !important;
+    color: white !important;
+}
+.headermenu-bg-style{
+    background-color: #232F3E !important;
+    color: white !important;
+}
+.category-bag-color{
+    background-color: #232F3E !important;
+    color: white !important;
+}
+.today-deal-banner{
+    /* padding-left: 50px !important; */
+    margin-top: -106px !important;
+}
+
+.today-deal-nearby-img{
+    height:100% !important;
+}
+.today-deal-nearby{    
+    margin-top: -106px !important;
+    /* padding-right: 50px !important; */
+}
+.hot-badge-size{
+    width: 45px !important;
+height: 22px !important;
+}
+.top-10-bg-color{
+    background-color: #fff;
+}
+.footer-bg-style{
+    background-color: #232F3E !important;
+    color: white !important;
+}
+.btn-style-normal{
+    border-color: #707070;
+}
+.size6075px{
+    height: 60px !important;
+    width: 75px !important;
+}
+.user-side-menu{
+    border-radius: 0.4rem !important;
+}
+.custom-container-home{
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}
+
+@media screen and (max-width:1024px) {
+    .web-nav-menu {
+      visibility: hidden;      
+      display: none;
+    }    
+  }
+  @media screen and (max-width:990px) {
+    .today-banner-img {
+        visibility: hidden;      
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:990px) {
+    .today-deal-banner{
+        padding-right: 50px !important;
+    }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav-cat {padding-top: 15px;}
+  .sidenav-cat a {font-size: 18px;}
+}

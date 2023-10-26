@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Edit">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Edit" clip-path="url(#clip-Edit)">
+    <path id="Icon_material-mode-edit" data-name="Icon material-mode-edit" d="M4.5,42.5v10h10L43.988,23.007l-10-10ZM51.72,15.275a2.655,2.655,0,0,0,0-3.759L45.481,5.276a2.655,2.655,0,0,0-3.759,0l-4.879,4.879,10,10Z" transform="translate(-3.5 -3.496)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Total_Orders">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Total_Orders" data-name="Total Orders" clip-path="url(#clip-Total_Orders)">
+    <g id="bxs-cart-alt" transform="translate(-2 -1)">
+      <path id="Path_8791" data-name="Path 8791" d="M48.6,6H3v4.8H8.52l8.449,23.237a4.809,4.809,0,0,0,4.51,3.161H41.4V32.4H21.479l-1.747-4.8H41.4A2.4,2.4,0,0,0,43.6,26.144l7.2-16.8A2.4,2.4,0,0,0,48.6,6Z" transform="translate(0 0)" fill="#1a1a26"/>
+      <path id="Path_8792" data-name="Path 8792" d="M20.7,30.6A3.6,3.6,0,1,1,17.1,27,3.6,3.6,0,0,1,20.7,30.6Z" transform="translate(6.299 12.598)" fill="#1a1a26"/>
+      <path id="Path_8793" data-name="Path 8793" d="M29.7,30.6A3.6,3.6,0,1,1,26.1,27,3.6,3.6,0,0,1,29.7,30.6Z" transform="translate(11.698 12.598)" fill="#1a1a26"/>
+    </g>
+  </g>
+</svg>

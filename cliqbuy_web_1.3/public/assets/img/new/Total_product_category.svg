@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Total_Product_Category">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Total_Product_Category" data-name="Total Product Category" clip-path="url(#clip-Total_Product_Category)">
+    <path id="Icon_awesome-boxes" data-name="Icon awesome-boxes" d="M46.667,24H40v8l-2.667-1.775L34.667,32V24H28a1.337,1.337,0,0,0-1.333,1.333v16A1.337,1.337,0,0,0,28,42.667H46.667A1.337,1.337,0,0,0,48,41.333v-16A1.337,1.337,0,0,0,46.667,24Zm-32-5.333H33.333a1.337,1.337,0,0,0,1.333-1.333v-16A1.337,1.337,0,0,0,33.333,0H26.667V8L24,6.225,21.333,8V0H14.667a1.337,1.337,0,0,0-1.333,1.333v16A1.337,1.337,0,0,0,14.667,18.667ZM20,24H13.333v8l-2.667-1.775L8,32V24H1.333A1.337,1.337,0,0,0,0,25.333v16a1.337,1.337,0,0,0,1.333,1.333H20a1.337,1.337,0,0,0,1.333-1.333v-16A1.337,1.337,0,0,0,20,24Z" transform="translate(1 4)"/>
+  </g>
+</svg>

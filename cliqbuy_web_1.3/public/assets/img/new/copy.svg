@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Copy">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Copy" clip-path="url(#clip-Copy)">
+    <path id="Icon_material-content-copy" data-name="Icon material-content-copy" d="M33.545,1.5H7.364A4.376,4.376,0,0,0,3,5.864V36.409H7.364V5.864H33.545Zm6.545,8.727h-24a4.376,4.376,0,0,0-4.364,4.364V45.136A4.376,4.376,0,0,0,16.091,49.5h24a4.376,4.376,0,0,0,4.364-4.364V14.591A4.376,4.376,0,0,0,40.091,10.227Zm0,34.909h-24V14.591h24Z" transform="translate(1 -0.5)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Blog_System">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Blog_System" data-name="Blog System" clip-path="url(#clip-Blog_System)">
+    <g id="blog" transform="translate(-3.5 -3.5)">
+      <path id="Path_8761" data-name="Path 8761" d="M4.5,27h20v4H4.5Z" transform="translate(0 17.5)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+      <path id="Path_8762" data-name="Path 8762" d="M4.5,20.25h20v4H4.5Z" transform="translate(0 12.25)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+      <path id="Path_8763" data-name="Path 8763" d="M48.5,24.5H8.5a4,4,0,0,1-4-4V8.5a4,4,0,0,1,4-4h40a4,4,0,0,1,4,4v12A4,4,0,0,1,48.5,24.5Zm-40-16v12h40V8.5Z" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+      <path id="Path_8764" data-name="Path 8764" d="M36.25,40.25h-12a4,4,0,0,1-4-4v-12a4,4,0,0,1,4-4h12a4,4,0,0,1,4,4v12A4,4,0,0,1,36.25,40.25Zm-12-16v12h12v-12Z" transform="translate(12.25 12.25)" fill="#fff" stroke="#fff" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>
